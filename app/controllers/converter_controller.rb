@@ -4,4 +4,14 @@ class ConverterController < ApplicationController
 
   end
 
+  def convert
+    p
+  end
+
+  private
+
+  def convert_params
+    params.permit!
+  end
+
 end

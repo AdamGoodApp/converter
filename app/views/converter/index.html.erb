@@ -1,1 +1,8 @@
 <h1>Convert documents to PDF</h1>
+
+<%= form_tag({action: :convert}, multipart: true, class: "dropzone") do %>
+    <div class="fallback">
+      <%= file_field_tag :files %><br>
+      <%= submit_tag "Upload" %>
+    </div>
+<% end %>
