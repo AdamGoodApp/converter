@@ -1,8 +1,7 @@
 class Converter
 
-  def initialize(folder, destination_folder)
-    @dir = folder
-    @new_dir = destination_folder
+  def initialize(file)
+    @file = file
   end
 
   def convert!
