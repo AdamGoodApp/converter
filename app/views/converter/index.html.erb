@@ -3,6 +3,6 @@
 <%= form_tag({action: :convert}, multipart: true, class: "dropzone", id: "new_upload") do %>
     <div class="fallback">
       <%= file_field_tag :files %><br>
-      <%= submit_tag "Upload" %>
     </div>
+    <%= submit_tag "Upload" %>
 <% end %>

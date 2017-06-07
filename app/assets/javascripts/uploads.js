@@ -3,9 +3,8 @@ $(document).ready(function(){
 
   $("#new_upload").dropzone({
     maxFilesize: 1,
-
+    // autoProcessQueue: false,
     paramName: "upload[file]",
-
     addRemoveLinks: true
   });
 });

@@ -5,7 +5,7 @@ class ConverterController < ApplicationController
   end
 
   def convert
-    p
+    Upload.new(convert_params).upload!
   end
 
   private
