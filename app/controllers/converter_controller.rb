@@ -11,7 +11,7 @@ class ConverterController < ApplicationController
   private
 
   def convert_params
-    params.permit!
+    params.require(:upload).permit(:file)
   end
 
 end
